@@ -1,0 +1,41 @@
+{
+  "devDependencies": {
+    "@types/jest": "^23.1.1",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "name": "netflix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SayMosaic/netflix",
+  "author": "Xuezheng Ma <xuezheng-ma@uiowa.edu>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "node ./node_modules/typescript/bin/tsc -p ./src",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*.+(ts|tsx|js)"
+    ],
+    "testEnvironment": "node"
+  }
+}
