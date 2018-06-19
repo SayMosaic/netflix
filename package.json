@@ -10,14 +10,14 @@
   },
   "name": "netflix",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/index.js",
   "repository": "https://github.com/SayMosaic/netflix",
   "author": "Xuezheng Ma <xuezheng-ma@uiowa.edu>",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "node ./node_modules/typescript/bin/tsc -p ./src",
-    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts",
-    "test": "jest"
+    "build": "tsc -p .",
+    "test": "jest",
+    "postinstall": "npm run build"
   },
   "jest": {
     "moduleFileExtensions": [
