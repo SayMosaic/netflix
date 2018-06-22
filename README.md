@@ -8,9 +8,9 @@ npm i SayMosaic/netflix --save
 
 yarn won't work for how yarn is using `.npmignore`, see https://github.com/yarnpkg/yarn/issues/685
 
-```
+```typescript
 import {netflixSearch} from 'netflix';
-netflixSearch('play supernatural'); // {id: '70143825', url: 'https://www.netflix.com/title/70143825'}
+netflixSearch('play supernatural'); // {id: '70143825', url: 'https://www.netflix.com/title/70143825', name: 'Supernatural'}
 ```
 
 
