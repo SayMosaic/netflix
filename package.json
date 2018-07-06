@@ -3,6 +3,7 @@
     "@types/jest": "^23.1.1",
     "jest": "^23.1.0",
     "ts-jest": "^22.4.6",
+    "tsc": "^1.20150623.0",
     "typescript": "^2.9.2"
   },
   "dependencies": {
