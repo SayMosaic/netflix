@@ -10,7 +10,7 @@
     "axios": "^0.18.0"
   },
   "name": "netflix",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./build/index.js",
   "repository": "https://github.com/SayMosaic/netflix",
   "author": "Xuezheng Ma <xuezheng-ma@uiowa.edu>",
